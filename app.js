@@ -10,7 +10,7 @@ shareButton.addEventListener('click', () => {
   if (mediaQuery.matches) {
     arrowDown.classList.remove('hidden');
     shareButton.classList.add('dark');
-    shareButtonImage.setAttribute('src', '/images/icon-share--white.svg');
+    shareButtonImage.setAttribute('src', './images/icon-share--white.svg');
   }
   if (!mediaQuery.matches) {
     avatar.classList.add('hidden');
@@ -22,7 +22,7 @@ shareBar.addEventListener('mouseleave', () => {
   if (mediaQuery.matches) {
     arrowDown.classList.add('hidden');
     shareButton.classList.remove('dark');
-    shareButtonImage.setAttribute('src', '/images/icon-share.svg');
+    shareButtonImage.setAttribute('src', './images/icon-share.svg');
   }
   if (!mediaQuery.matches) {
     avatar.classList.remove('hidden');
