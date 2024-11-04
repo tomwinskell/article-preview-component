@@ -40,14 +40,6 @@ img {
   height: auto;
 }
 
-.dark {
-  background-color: var(--desat-blue);
-}
-
-.dark-text {
-  color: var(--light-gray);
-}
-
 /* center card on page */
 .center-me {
   width: 100vw;
@@ -154,6 +146,14 @@ img {
 
 .hidden {
   display: none;
+}
+
+.dark {
+  background-color: var(--desat-blue);
+}
+
+.dark-text {
+  color: var(--light-gray);
 }
 
 /* media queries for desktop */
