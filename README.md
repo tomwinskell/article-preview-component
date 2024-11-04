@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot-desktop](/article-preview-component/blob/main/Frontend Mentor _ Article preview component · 11.07am · 11-04.jpeg)
-![screenshot-tablet](/article-preview-component/blob/main/Frontend Mentor _ Article preview component.jpeg)
+![screenshot-desktop](https://github.com/tomwinskell/article-preview-component/blob/main/Frontend%20Mentor%20_%20Article%20preview%20component%20%C2%B7%2011.07am%20%C2%B7%2011-04.jpeg?raw=true)
+![screenshot-tablet](https://github.com/tomwinskell/article-preview-component/blob/main/Frontend%20Mentor%20_%20Article%20preview%20component.jpeg?raw=true)
 
 ### Links
 
