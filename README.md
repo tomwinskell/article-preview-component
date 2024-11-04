@@ -1,6 +1,6 @@
-# Frontend Mentor - Meet landing page solution
+# Frontend Mentor - Article preview component solution
 
-This is a solution to the [Meet landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Article preview component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -20,66 +20,71 @@ This is a solution to the [Meet landing page challenge on Frontend Mentor](https
 
 Users should be able to:
 
-- View the optimal layout depending on their device's screen size
-- See hover states for interactive elements
+- View the optimal layout for the component depending on their device's screen size
+- See the social media share links when they click the share icon
 
 ### Screenshot
 
-![screenshot-desktop](https://raw.githubusercontent.com/tomwinskell/meetlandingpage/refs/heads/main/assets/screenshots/screenshot-desktop.png)
-![screenshot-tablet](https://raw.githubusercontent.com/tomwinskell/meetlandingpage/refs/heads/main/assets/screenshots/screenshot-tablet.png)
+![screenshot-desktop](/article-preview-component/Frontend Mentor _ Article preview component · 11.07am · 11-04.jpeg)
+![screenshot-tablet](/article-preview-component/Frontend Mentor _ Article preview component.jpeg)
 
 ### Links
 
-- Solution URL: [https://github.com/tomwinskell/meetlandingpage](https://github.com/tomwinskell/meetlandingpage)
-- Live Site URL: [https://tomwinskell.github.io/meetlandingpage](https://tomwinskell.github.io/meetlandingpage)
+- Solution URL: [https://github.com/tomwinskell/meetlandingpage](https://github.com/tomwinskell/article-preview-component)
+- Live Site URL: [https://tomwinskell.github.io/meetlandingpage](https://tomwinskell.github.io/article-preview-component)
 
 ## My process
 
 ### Built with
 
-- Bootstrap 5.3
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - BEM
+- Javascript
+- Media queries (Javascript and CSS)
 
 ### What I learned
 
-- Took longer than expected because I was learning Bootstrap.
-- Working mostly in the html file saves switching back and forth between html and css. Will be quicker once I know all of the class names and specifics of Bootstrap.
-- Layout was challenging because of the different layouts for each screen size.
-- CSS Grid can be used to overlay items. Blog post here: [http://tomwinskell.simple.ink/](https://tomwinskell.simple.ink/overlay-elements-with-css-grid-122eebbfd13f80f09bafe3492f9a942b).
+- JavaScript adds a layer of complexity to a project. The JavaScript is actually more straightforward than the CSS. However, there were more lines of JavaScript to write than I expected. I think that the JavaScript for more complex projects could easily get out of control.
 
-CSS code snipet for footer with overlaid elements. Screenshot below.
+- Absolute elements are positioned relative to the first parent with the property display: relative. If there are none then the element will default to using the browser window.
 
-```css
-.footer {
-  display: grid;
-  grid-template-rows: auto 28px 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-}
+- If you have a div with overflow: hidden then your absolute element cannot overflow this div. Unless you use a grand-parent set to position: relative where overflow is not hidden.
 
-.footer__divider {
-  grid-area: 1 / 2 / 3 / 3;
-  align-self: end;
-  z-index: 1;
-}
+- There are media queries in JavaScript. Can be used with if else statements to determine which actions should be completed.
 
-.footer__container {
-  grid-area: 2 / 1 / 4 / 4;
+```js
+const mediaQuery = window.matchMedia('(min-width: 768px');
+
+if (mediaQuery.matches) {
+  arrowDown.classList.remove('hidden');
+  shareButton.classList.add('dark');
+  shareButtonImage.setAttribute('src', '/images/icon-share--white.svg');
 }
 ```
 
-![screenshot-footer](https://raw.githubusercontent.com/tomwinskell/meetlandingpage/refs/heads/main/assets/screenshots/screenshot-footer.png)
+- With flex box, text takes priority and will always grow to the maximum possible. Unless you specify that imagex and other divs must not shrink, using flex-shrink: 0.
+
+- Drawing a triangle is possible with a single div.
+
+```css
+.preview__footer__share__arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid var(--dark-blue);
+}
+```
 
 ### Continued development
 
+- JavaScript integration with CSS and HTML
 - BEM
-- CSS Grid
-- Bootstrap
 
 ### Useful resources
 
-- [https://getbootstrap.com/](https://getbootstrap.com/)
-- [http://tomwinskell.simple.ink/](https://tomwinskell.simple.ink/overlay-elements-with-css-grid-122eebbfd13f80f09bafe3492f9a942b).
+- [CSS Triangle](https://css-tricks.com/snippets/css/css-triangle/)
+- [Working with JavaScript media queries](https://css-tricks.com/working-with-javascript-media-queries/).
+- [How to make absolute positioned elements overlap their overflow hidden parent](https://front-back.com/how-to-make-absolute-positioned-elements-overlap-their-overflow-hidden-parent/)
