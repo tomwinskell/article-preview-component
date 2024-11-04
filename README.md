@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot-desktop](/article-preview-component/Frontend Mentor _ Article preview component · 11.07am · 11-04.jpeg)
-![screenshot-tablet](/article-preview-component/Frontend Mentor _ Article preview component.jpeg)
+![screenshot-desktop](/article-preview-component/blob/main/Frontend Mentor _ Article preview component · 11.07am · 11-04.jpeg)
+![screenshot-tablet](/article-preview-component/blob/main/Frontend Mentor _ Article preview component.jpeg)
 
 ### Links
 
